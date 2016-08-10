@@ -12,10 +12,6 @@ gulp
 
 echo "please set .env file to connect db";
 
-chmod +x serv.sh
-
-./serv.sh 
-
-gulp watch
+php artisan serve --port=80 --host=flukky.dev
 
 $SHELL
