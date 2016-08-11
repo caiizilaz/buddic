@@ -19,13 +19,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- โครงสร้างตาราง `words`
 -- 
 
-CREATE TABLE `words` (
+/*CREATE TABLE `words` (
   `id` int(5) NOT NULL auto_increment,
   `budtext` varchar(50) NOT NULL,
   `desc` varchar(500) NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `budtext` (`budtext`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4367 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4367 ;*/
 
 -- 
 -- dump ตาราง `words`

@@ -5731,6 +5731,34 @@ button.close {
     display: none !important; } }
 
 .content {
-  height: 70%; }
+  min-height: 70vh; }
+
+.navbar-tran {
+  border: none;
+  border-radius: 0;
+  background-color: transparent; }
+
+.parallax {
+  /* The image used */
+  background-image: url("/img/headbg.png");
+  /* Set a specific height */
+  height: 90vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.navbar {
+  min-height: 70px; }
+
+.navbar-nav > li > a {
+  color: #F5AB35 !important; }
+
+.navbar-header > a > img {
+  max-height: 50px; }
+
+.navbar-brand {
+  padding: 10px 10px; }
 
 /*# sourceMappingURL=app.css.map */
