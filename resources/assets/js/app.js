@@ -5,8 +5,10 @@ Vue.use(VueResource)
 Vue.use(VueRouter)
 
 var vm = new Vue({
-	el: '.budapp',
+	el: '#budapp',
 	ready: function () {
 		
 	}
 });
+
+
