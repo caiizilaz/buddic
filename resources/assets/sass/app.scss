@@ -1,6 +1,7 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-social/bootstrap-social.scss";
 .content {
-  padding-top: 150px;
+  padding-top: 20px;
 }
 .navbar-tran {
   border: none;
@@ -8,6 +9,17 @@
   background-color: rgba(0,0,0,0);
   max-height: 50px;
 }
+
+select.form-control {
+  height: 100%;
+  min-height:150px;
+}
+
+textarea.form-control {
+  height: 100%;
+  min-height:150px;
+}
+
 .parallax { 
   background-image: url("/img/temple.jpg");
   height: 100vh; 
@@ -47,9 +59,9 @@
 }
 
 #budapp {
+  margin-top: 20px;
   border-radius: 15px 70px 50px;
   background: #F5D76E;
-  height: 80vh;
   padding: 2em; 
 }
 
@@ -57,4 +69,31 @@
   div#bs-example-navbar-collapse-1 {
     background-color: #FDE3A7;
   }
+}
+
+footer {
+  background-color: #FDE3A7;
+}
+
+footer .footer {
+  margin-top: 35px;
+  padding: 15px;
+}
+
+.copyright {
+  font-size: 1.2em;
+  padding-top: 15px;
+}
+
+a, .copyright {
+  font-family: 'Kanit', sans-serif !important;
+}
+
+body {
+  font-family: 'Maitree', serif;
+}
+
+h2 {
+  font-family: 'Taviraj', serif;
+  color: #F5AB35;
 }

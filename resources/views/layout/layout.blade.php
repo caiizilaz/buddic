@@ -5,6 +5,8 @@
 	<meta name="token" id="token" value="{{ csrf_token() }}">
 	<title>พจนานุกรมพุทธศาสตร์</title>
 	<link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Maitree|Taviraj" rel="stylesheet">
 </head>
 <body>
 	@include('layout/header')
