@@ -13,12 +13,12 @@ require('laravel-elixir-vueify');
 
 elixir(function(mix) {
 	mix.sass('app.scss')
-		//.copy('node_modules/jquery/dist/jquery.min.js', 'public/js/')
-		//.copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', 'public/js/')
+		.copy('node_modules/jquery/dist/jquery.min.js', 'public/js/')
+		.copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', 'public/js/')
         .browserify(['app.js','bundle.js'])
         .browserSync({
             proxy: 'flukky.dev'
         })
-        .version(['css/app.css','js/app.js','js/bundle.js'])
+        .version(['css/app.css','js/app.js'])
 
 });

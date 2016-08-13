@@ -13,14 +13,8 @@
 		<div class="form-group row">
 			<div class="col-sm-6">
 				<label for="word">คำศัพท์ทั้งหมด : </label>
-				<select name="word" multiple class="form-control" v-model="add_word">
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
+				<select name="word" multiple class="form-control" v-model="select">
+					<option @click="fillmean(word)" v-for="word in words | filterBy search_word" :value="word">@{{word.budtext}}</option>
 				</select>
 			</div>
 			<div class="col-sm-6">

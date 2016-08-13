@@ -1,6 +1,5 @@
+@include('layout/navbar')
 <div class="parallax">
-	<div class="overlay">
-		
-	</div>
-	@include('layout/navbar')
+	
 </div>
+@include('layout/siteheading')

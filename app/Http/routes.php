@@ -12,3 +12,7 @@
 */
 
 Route::resource('/', 'HomeController');
+
+Route::get('api/words', function () {
+	return App\Word::all();
+});

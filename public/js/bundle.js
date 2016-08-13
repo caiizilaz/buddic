@@ -14282,7 +14282,27 @@ _vue2.default.use(_vueRouter2.default);
 
 var vm = new _vue2.default({
 	el: '#budapp',
-	ready: function ready() {}
+	data: {
+		words: {},
+		select: {},
+		search_word: '',
+		mean: ''
+	},
+	methods: {
+		fetchWord: function fetchWord() {
+			var _this = this;
+
+			this.$http.get('/api/words').then(function (data) {
+				_this.$set('words', data.json());
+			});
+		},
+		fillmean: function fillmean(word) {
+			this.$set('mean', word.desc);
+		}
+	},
+	ready: function ready() {
+		this.fetchWord();
+	}
 });
 
 },{"vue":4,"vue-resource":2,"vue-router":3}],6:[function(require,module,exports){
@@ -14302,6 +14322,12 @@ $(document).ready(function () {
 			}
 		});
 	}
+	$('a').click(function () {
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top
+		}, 1000);
+		return false;
+	});
 });
 
 },{}]},{},[5,6]);
