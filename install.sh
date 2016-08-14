@@ -8,9 +8,9 @@ npm install
 
 php artisan key:generate
 
-gulp
+php artisan migrate
 
-echo "please set .env file to connect db";
+gulp
 
 php artisan serve --port=80 --host=flukky.dev
 

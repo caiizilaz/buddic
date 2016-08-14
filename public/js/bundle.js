@@ -14322,11 +14322,22 @@ $(document).ready(function () {
 			}
 		});
 	}
+	$('body').prepend('<a href="#parallax" class="back-to-top">Back to Top</a>');
+	var amountScrolled = 300;
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > amountScrolled) {
+			$('a.back-to-top').fadeIn('slow');
+		} else {
+			$('a.back-to-top').fadeOut('slow');
+		}
+	});
 	$('a').click(function () {
-		$('html, body').animate({
-			scrollTop: $($(this).attr('href')).offset().top
-		}, 1000);
-		return false;
+		if ($(this).attr('href').length > 1) {
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 1000);
+			return false;
+		}
 	});
 });
 

@@ -15,7 +15,7 @@ class CreateWordsTable extends Migration
         Schema::create('words', function (Blueprint $table) {
             $table->increments('id');
             $table->string('budtext');
-            $table->string('desc');
+            $table->text('desc');
         });
     }
 

@@ -19,6 +19,6 @@ elixir(function(mix) {
         .browserSync({
             proxy: 'flukky.dev'
         })
-        .version(['css/app.css','js/app.js'])
+        .version(['css/app.css'])
 
 });

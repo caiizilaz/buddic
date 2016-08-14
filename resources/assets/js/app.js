@@ -18,7 +18,7 @@ var vm = new Vue({
 				this.$set('words', data.json())
       		});
 		},
-		fillmean: function (word){
+		fillmean: function (word) {
 			this.$set('mean', word.desc);
 		}
 	},
